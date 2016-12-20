@@ -1,0 +1,14 @@
+Starting with modsecurity
+-------------------------
+
+If you want to start using Modsecurity without the risk of blocking your
+current sites, you may rename /etc/modsecurity/modsecurity.conf-recommended to
+/etc/modsecurity/modsecurity.conf and restart Apache. By default this
+configuration will run modsecurity in DetectOnly mode, thus just logging
+matching rules, but not acting on the requests.
+
+You may also install the modsecurity-crs package wich includes lots of well
+tested rules.
+
+ -- Alberto Gonzalez Iniesta <agi@inittab.org>  Thu, 03 May 2012 18:07:24 +0200
+

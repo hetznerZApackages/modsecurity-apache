@@ -1,0 +1,16 @@
+Description: Set correct path to log file
+Author: Alberto Gonzalez Iniesta <agi@inittab.org>
+
+Index: modsecurity-apache/modsecurity.conf-recommended
+===================================================================
+--- modsecurity-apache.orig/modsecurity.conf-recommended	2014-11-04 12:53:35.479945458 +0100
++++ modsecurity-apache/modsecurity.conf-recommended	2014-11-04 12:53:35.475945458 +0100
+@@ -190,7 +190,7 @@
+ # assumes that you will use the audit log only ocassionally.
+ #
+ SecAuditLogType Serial
+-SecAuditLog /var/log/modsec_audit.log
++SecAuditLog /var/log/apache2/modsec_audit.log
+ 
+ # Specify the path for concurrent audit logging.
+ #SecAuditLogStorageDir /opt/modsecurity/var/audit/

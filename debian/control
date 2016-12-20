@@ -1,0 +1,37 @@
+Source: modsecurity-apache
+Section: httpd
+Priority: optional
+Maintainer: Alberto Gonzalez Iniesta <agi@inittab.org>
+Build-Depends: debhelper (>> 8.1.0~), apache2-dev, libxml2-dev (>= 2.0.50-10), liblua5.1-0-dev, libcurl4-gnutls-dev, dh-autoreconf, libpcre3-dev, pkg-config, libyajl-dev
+Standards-Version: 3.9.5
+Homepage: http://www.modsecurity.org/
+
+Package: libapache2-mod-security2
+Architecture: any
+Replaces: libapache2-modsecurity (<< 2.7.7-1~)
+Breaks: libapache2-modsecurity (<< 2.7.7-1~)
+Recommends: modsecurity-crs
+Depends: libxml2, ${shlibs:Depends}, ${misc:Depends}
+Description: Tighten web applications security for Apache
+ Modsecurity is an Apache module whose purpose is to tighten the Web
+ application security. Effectively, it is an intrusion detection and prevention
+ system for the web server. 
+ .
+ At the moment its main features are:
+   * Audit log; store full request details in a separate file, including POST 
+     payloads.
+   * Request filtering; incoming requests can be analysed and offensive requests
+     can be rejected (or simply logged, if that is what you want). This feature 
+     can be used to prevent many types of attacks (e.g. XSS attacks, SQL 
+     injection, ...) and even allow you to run insecure applications on your 
+     servers (if you have no other choice, of course).
+
+Package: libapache2-modsecurity
+Architecture: all
+Priority: extra
+Section: oldlibs
+Depends: libapache2-mod-security2, ${misc:Depends}
+Description: Dummy transitional package
+ This package is provided to ease the updating of modsecurity to the new 
+ package name. You may safely remove it.
+

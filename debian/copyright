@@ -1,0 +1,22 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: modsecurity-apache
+Source: http://www.modsecurity.org
+
+Files: *
+Copyright: (c) 2006-2011 Trustwave Holdings, Inc.
+License: ASLv2
+ ModSecurity for Apache is provided to you under the terms and
+ conditions of Apache Software License Version 2 (ASLv2).
+ .
+ On Debian systems, the complete text of the Apache Software License
+ Version 2 can be found in "/usr/share/common-licenses/Apache-2.0".
+
+Files: debian/*
+Copyright: (c) 2006-2012 Alberto Gonzalez Iniesta <agi@inittab.org>
+License: ASLv2
+ Debian packaging for ModSecurity is provided to you under the terms 
+ and conditions of Apache Software License Version 2 (ASLv2).
+ .
+ On Debian systems, the complete text of the Apache Software License
+ Version 2 can be found in "/usr/share/common-licenses/Apache-2.0".
+

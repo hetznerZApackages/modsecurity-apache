@@ -1,0 +1,35 @@
+modsecurity-apache (2.7.7-1) unstable; urgency=low
+
+  New name
+  --------
+  From this version libapache2-modsecurity changes name to
+  libapache2-mod-security2, to follow the naming of other Apache 2 modules.
+
+ -- Alberto Gonzalez Iniesta <agi@inittab.org>  Fri, 20 Dec 2013 11:36:30 +0100
+
+modsecurity-apache (2.5.13-1) unstable; urgency=low
+
+  New name
+  --------
+  From this version libapache-mod-security changes name to
+  libapache2-modsecurity, to follow the naming of other Apache 2 modules.
+  It's source package is now named modsecurity-apache, in accordance with
+  its upstream name. Previous source package name came from the 1.x series.
+
+  New way to handle configuration
+  -------------------------------
+  Previous versions of libapache2-modsecurity did not offer a standard
+  way to handle its configuration. Starting with this version
+  mod-security.conf, in /etc/apache2/mods-available/, sets SecDataDir and
+  includes all the *.conf files in /etc/modsecurity, where you can
+  deploy you configuration files. And example file is provided in
+  /etc/modsecurity so you can start using it now! (see README.Debian)
+
+  mod-security-common will now be modsecurity-crs
+  -----------------------------------------------
+  Using upstream's indepedent tarball for Core Rules as the source package,
+  allowing for easy updating of the rules without the need to upgrade the
+  module too.
+
+ -- Alberto Gonzalez Iniesta <agi@inittab.org>  Wed, 23 Mar 2011 18:36:29 +0100
+

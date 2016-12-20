@@ -1,0 +1,24 @@
+Index: modsecurity-apache/modsecurity.conf-recommended
+===================================================================
+--- modsecurity-apache.orig/modsecurity.conf-recommended	2016-12-20 17:15:49.457560206 +0100
++++ modsecurity-apache/modsecurity.conf-recommended	2016-12-20 17:22:32.494460391 +0100
+@@ -88,8 +88,8 @@
+ # PCRE Tuning
+ # We want to avoid a potential RegEx DoS condition
+ #
+-SecPcreMatchLimit 1000
+-SecPcreMatchLimitRecursion 1000
++SecPcreMatchLimit 100000
++SecPcreMatchLimitRecursion 100000
+ 
+ # Some internal errors will set flags in TX and we will need to look for these.
+ # All of these are prefixed with "MSC_".  The following flags currently exist:
+@@ -184,7 +184,7 @@
+ SecAuditLogRelevantStatus "^(?:5|4(?!04))"
+ 
+ # Log everything we know about a transaction.
+-SecAuditLogParts ABIJDEFHZ
++SecAuditLogParts ABDEFHIJZ
+ 
+ # Use a single file for logging. This is much easier to look at, but
+ # assumes that you will use the audit log only ocassionally.

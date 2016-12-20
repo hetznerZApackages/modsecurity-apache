@@ -1,0 +1,3 @@
+usr/lib/apache2/modules
+etc/modsecurity
+var/cache/modsecurity

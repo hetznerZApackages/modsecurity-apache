@@ -1,0 +1,4 @@
+mlogc/mlogc	usr/bin
+mlogc/README.mlogc usr/share/doc/libapache2-modsecurity
+mlogc/mlogc-default.conf usr/share/doc/libapache2-modsecurity
+unicode.mapping etc/modsecurity
