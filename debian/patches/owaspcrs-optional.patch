@@ -1,0 +1,10 @@
+Make owasp-crs.load optional
+--- a/debian/security2.conf
++++ b/debian/security2.conf
+@@ -9,5 +9,5 @@
+         IncludeOptional /etc/modsecurity/*.conf
+ 
+ 	# Include OWASP ModSecurity CRS rules if installed
+-	IncludeOptional /usr/share/modsecurity-crs/owasp-crs.load
++	IncludeOptional /usr/share/modsecurity-crs/*.load
+ </IfModule>
