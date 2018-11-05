@@ -1,3 +1,9 @@
+modsecurity-apache (2.9.1-2+hetz1) jessie-hetz; urgency=medium
+
+  * Released 2.9.1-2+hetz1~exp2 as 2.9.1-2+hetz1
+
+ -- Walter Kleynscheldt <walter.kleynscheldt@hetzner.co.za>  Mon, 05 Nov 2018 13:12:20 +0200
+
 modsecurity-apache (2.9.1-2+hetz1~exp2) jessie-hetz-experimental; urgency=medium
 
   * Change CRS IncludeOptional to wildcard to get the desired behaviour (not
