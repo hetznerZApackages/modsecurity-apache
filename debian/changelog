@@ -1,3 +1,11 @@
+modsecurity-apache (2.9.1-2+hetz1~exp1) jessie-hetz-experimental; urgency=medium
+
+  * Change CRS IncludeOptional to wildcard to get the desired behaviour (not
+    failing when CRS not present). Thanks Walter Kleynscheldt for pointing
+    this out. (Closes: #874542)
+
+ -- Walter Kleynscheldt <walter.kleynscheldt@hetzner.co.za>  Mon, 05 Nov 2018 12:38:14 +0200
+
 modsecurity-apache (2.9.1-2) unstable; urgency=medium
 
   * security2.load: Remove no longer needed load of libxml2.so.2
